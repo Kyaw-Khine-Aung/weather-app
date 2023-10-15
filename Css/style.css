@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #3a3b34;
+    overflow-y: hidden;
+}
+
+.mainContainer {
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.mainContainer .container {
+    width: 83%;
+    text-align: center;
+}
+
+.mainContainer .container img {
+    width: 100px;
+    margin-top: 15px;
+}
+
+.mainContainer .container h2 {
+    color: #fff;
+    font-size: 60px;
+}
+
+.mainContainer .container h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.mainContainer .container .details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    padding-bottom: 20px;
+
+}
+
+.mainContainer .container .details .detailItem{
+    display: flex;
+    align-items: center;
+}
+
+.mainContainer .container .details .detailItem .contant div {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mainContainer .container .details .detailItem img {
+    margin-top: -4px;
+    margin-right: 10px;
+}
+
+.mainContainer .container .details img {
+    width: 30px;
+}
+
+.mainContainer .container .details  div {
+    color: #eee;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.mainContainer .container .inputForm {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mainContainer .container .inputForm .inputAndIcon i {
+    color: rgb(105, 98, 98);
+    cursor: pointer;
+}
+
+.mainContainer .container .inputForm input {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    outline: 0;
+    border: 0;
+}
+
+.mainContainer .container .inputForm .image {
+    width: 40px;
+    border-radius: 50%;
+    background: #fff;
+    height: 40px;
+    cursor: pointer;
+}
+
+.mainContainer .container .inputForm .image img {
+   width: 16px;
+   padding: 0 2px 0;
+}
+
+.weather {
+    display: none;
+} 
+
+.invalidCity {
+    text-align: left;
+    color: #fff;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.mainCityContainer {
+    background-color: #fff;
+    max-width: 300px;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.mainCityContainer .cityContainer {
+    max-height: 250px;
+    margin: 20px;
+    overflow-y: auto;
+    max-height: 200px;
+    padding: 0; 
+}
+
+
+.cityContainer div {
+    line-height: 30px;
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 2px solid lightgray;
+}
+
+.cityContainer div:hover {
+    background-color: lightblue;
+}
+
+.error{
+    animation: shake 0.1s linear 10;
+  }
+  @keyframes shake {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(-2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+  }

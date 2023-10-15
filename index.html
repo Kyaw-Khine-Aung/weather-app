@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./asset/fontAwesome/fontawesome.min.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="container">
+            <div class="inputForm">
+                <input type="text" placeholder="enter country:" class="searchInput">
+                <div class="image">
+                    <img src="./images/search.png" alt="" class="searchIcon">
+                </div>
+            </div>
+            <div class="invalidCity">
+                <span>Invalid city name</span>
+            </div>
+            <div class="weather">
+                <img src="./images/clouds.png" alt="" class="weatherImage">
+                <h2 class="temp">22°c</h2>
+                <h3 class="city">New York</h3>
+                <div class="details">
+                    <div class="detailItem">
+                        <img src="./images/humidity.png" alt="">
+                        <div class="contant">
+                            <div class="humidity">50%</div>
+                            <span>Humidity</span>
+                        </div>
+                    </div>
+                    <div class="detailItem">
+                        <img src="./images/wind.png" alt="">
+                        <div class="contant">
+                            <div class="wind">15km/h</div>
+                            <span>Wind Speed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainCityContainer">
+        <div class="cityContainer">
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
